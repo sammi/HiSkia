@@ -146,14 +146,15 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\songy\source\repos\HiSkia\HiSkia\skia;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\songy\source\repos\HiSkia\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>skia.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\ucrt\x64;C:\Users\songy\source\repos\HiSkia\libs\sk_app;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\lib\x64;C:\Users\songy\source\repos\HiSkia\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>skia.lib;expat.lib;FontSub.lib;Ole32.lib;OleAut32.lib;User32.lib;Usp10.lib;OpenGL32.lib;Advapi32.lib;Gdi32.lib;DbgHelp.lib;sk_app.CommandSet.obj;sk_app.GLWindowContext.obj;sk_app.Window.obj;win\sk_app.GLWindowContext_win.obj;win\sk_app.main_win.obj;win\sk_app.RasterWindowContext_win.obj;win\sk_app.Window_win.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
